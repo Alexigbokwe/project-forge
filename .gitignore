@@ -1,0 +1,7 @@
+*-debug.log
+*-error.log
+**/.DS_Store
+/.idea
+/lib
+/tmp
+/node_modules
