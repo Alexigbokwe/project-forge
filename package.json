@@ -1,6 +1,6 @@
 {
   "name": "project-forge",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Typescript, Javascript project builder.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -15,6 +15,7 @@
     ".": "./lib/index.js"
   },
   "keywords": [
+    "projectforge",
     "project-forge",
     "builder",
     "forge",
@@ -28,13 +29,14 @@
   "author": "Alex Igbokwe",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^20.13.0",
     "@types/shelljs": "^0.8.15",
-    "typescript": "^5.0.4"
+    "typescript": "^5.4.5"
   },
   "dependencies": {
+    "chalk": "4.1.2",
+    "ora": "5.4.1",
     "shelljs": "^0.8.5",
-    "chalk": "^5.3.0",
-    "ora": "^8.0.1"
+    "ts-node": "^10.9.2"
   }
 }

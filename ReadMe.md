@@ -7,7 +7,7 @@ Project-Forge is a Node.js build tool designed to streamline the process of buil
 To install Project-Forge, use npm, yarn or bun:
 
 ```cli
-npm install project-forge
+npm install project-forge --save-dev
 ```
 
 Or
@@ -18,7 +18,9 @@ yarn add project-forge
 
 ### Usage
 
-Here is a basic example of how to use Project-Forge:
+In the root of your project, create a build configuration file named <code>buildConfiguration.ts</code>. This file will contain the configuration for your build process.
+
+Here's an example of a basic <code>buildConfiguration.ts</code> file:
 
 ```ts
 import { ProjectForge } from "project-forge";
@@ -37,6 +39,18 @@ builder.afterBuild(async () => {
 
 builder.build();
 ```
+
+### Run the Build Process:
+
+Execute the build process by running the following command in your terminal:
+
+```cli
+ts-node buildConfiguration.ts
+```
+
+This will execute the tasks defined in your buildConfiguration.ts file and generate a production build for your project.
+
+That's it! You've successfully used Project-Forge to streamline your Node.js build process. You can customize your build configuration to include additional tasks as needed for your project.
 
 ### APIs
 

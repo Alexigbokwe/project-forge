@@ -21,7 +21,8 @@ export class Spinner {
   public static startProcess(message: string) {
     this.spinner.start();
     this.spinner.color = "magenta";
-    this.spinner.text = `${message} `;
+    this.spinner.text = message;
+    this.spinner.succeed(chalk.yellow(message));
   }
 
   public static infoLog(message: string) {
